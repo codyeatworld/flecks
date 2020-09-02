@@ -1,0 +1,16 @@
+{
+  "twilio_account_sid": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "twilio_auth_token": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "twilio_from_number": "+15553334444",
+  "pages": [
+    {
+      "name": "Rouge Flecks",
+      "url": "https://www.roguefitness.com/rogue-fleck-plates",
+      "interval": 5,
+      "xpaths": [
+        "//*[@id='super-product-table']"
+      ],
+      "phone_number": "+15553334444"
+    }
+  ]
+}

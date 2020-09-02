@@ -1,0 +1,89 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
+    async (1.26.2)
+      console (~> 1.0)
+      nio4r (~> 2.3)
+      timers (~> 4.1)
+    cliver (0.3.2)
+    concurrent-ruby (1.1.7)
+    console (1.9.0)
+    diffy (3.4.0)
+    evt-attribute (2.0.0.0)
+    evt-casing (2.0.0.0)
+    evt-clock (2.3.1.0)
+      evt-mimic
+    evt-dependency (2.0.0.0)
+      evt-subst_attr
+    evt-initializer (2.0.0.0)
+      evt-attribute
+    evt-invocation (2.2.0.0)
+    evt-log (2.1.1.2)
+      evt-clock
+      evt-dependency
+      evt-initializer
+      evt-telemetry
+      terminal_colors
+    evt-mimic (2.3.1.2)
+      evt-invocation
+    evt-reflect (2.2.0.0)
+    evt-schema (2.3.0.0)
+      evt-attribute
+      evt-initializer
+      evt-set_attributes
+      evt-validate
+      evt-virtual
+    evt-set_attributes (2.2.0.0)
+    evt-settings (2.1.1.0)
+      evt-casing
+      evt-log
+    evt-subst_attr (2.1.0.2)
+      evt-attribute
+      evt-mimic
+      evt-reflect
+    evt-telemetry (2.4.0.2)
+      evt-clock
+      evt-dependency
+    evt-validate (2.0.0.0)
+      evt-reflect
+    evt-virtual (2.0.1.0)
+    faraday (1.0.1)
+      multipart-post (>= 1.2, < 3)
+    ferrum (0.9)
+      addressable (~> 2.5)
+      cliver (~> 0.3)
+      concurrent-ruby (~> 1.1)
+      websocket-driver (>= 0.6, < 0.8)
+    jwt (2.2.2)
+    mini_portile2 (2.4.0)
+    multipart-post (2.1.1)
+    nio4r (2.5.2)
+    nokogiri (1.10.10)
+      mini_portile2 (~> 2.4.0)
+    public_suffix (4.0.6)
+    terminal_colors (1.0.0)
+    timers (4.3.0)
+    twilio-ruby (5.40.0)
+      faraday (>= 0.9, < 2.0)
+      jwt (>= 1.5, <= 2.5)
+      nokogiri (>= 1.6, < 2.0)
+    websocket-driver (0.7.3)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  async
+  diffy
+  evt-log
+  evt-schema
+  evt-settings
+  ferrum
+  twilio-ruby
+
+BUNDLED WITH
+   2.1.4
