@@ -33,7 +33,7 @@ module Flecks
 
           if !previous_content.nil? && previous_content != content
             logger.info "#{page.name}: New changes found"
-            logger.info "#{page.name}: Sending SMS to #{page.phone}"
+            logger.info "#{page.name}: Sending SMS to #{page.phone_number}"
 
             SendSMS.(page, previous_content, content)
           else
