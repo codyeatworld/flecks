@@ -10,6 +10,7 @@
       "xpaths": [
         "//*[@id='super-product-table']"
       ],
+      "discord_webhook_url": "https://discordapp.com/api/webhooks/xxx/xxx",
       "phone_number": "+15553334444"
     }
   ]

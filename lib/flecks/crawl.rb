@@ -33,9 +33,18 @@ module Flecks
 
           if !previous_content.nil? && previous_content != content
             logger.info "#{page.name}: New changes found"
-            logger.info "#{page.name}: Sending SMS to #{page.phone_number}"
 
-            SendSMS.(page, previous_content, content)
+            unless page.phone_number.nil?
+              logger.info "#{page.name}: Sending SMS to #{page.phone_number}"
+
+              SendSMS.(page, previous_content, content)
+            end
+
+            unless page.discord_webhook_url.nil?
+              logger.info "#{page.name}: Sending discord notification"
+
+              NotifyDiscord.(page, previous_content, content)
+            end
           else
             unless previous_content.nil?
               logger.info "#{page.name}: No changes found"

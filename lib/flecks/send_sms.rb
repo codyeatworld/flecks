@@ -12,21 +12,5 @@ module Flecks
       client = Twilio::REST::Client.new(twilio_account_sid, twilio_auth_token)
       client.messages.create(from: twilio_from_number, to: page.phone_number, body: body)
     end
-
-    module Body
-      def self.call(url, previous_content, content)
-        body = <<~HTML.strip
-          #{url}
-          --
-          #{Diff.(previous_content, content)}
-        HTML
-      end
-    end
-
-    module Diff
-      def self.call(previous_content, content)
-        Diffy::Diff.new(previous_content + "\n", content + "\n", context: 2, diff: '-w')
-      end
-    end
   end
 end
